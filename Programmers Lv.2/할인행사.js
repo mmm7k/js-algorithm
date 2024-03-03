@@ -13,6 +13,7 @@ function solution(want, number, discount) {
         break;
       }
     }
+
     // 원하는 제품들이 목표 수량만큼 존재하는 경우
     if (flag) count += 1;
   }
