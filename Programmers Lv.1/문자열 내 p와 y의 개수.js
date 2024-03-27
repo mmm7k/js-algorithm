@@ -1,7 +1,6 @@
 function solution(s) {
   let countp = 0;
   let county = 0;
-  s.split('');
   for (let i = 0; i < s.length; i++) {
     if (s[i] === 'p' || s[i] === 'P') {
       countp++;
