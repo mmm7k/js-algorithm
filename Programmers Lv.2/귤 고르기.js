@@ -8,10 +8,8 @@ function solution(k, tangerine) {
       countMap[size] = 1;
     }
   });
-
   // 귤의 개수별로 내림차순 정렬
   const sortedCounts = Object.values(countMap).sort((a, b) => b - a);
-
   // k개를 선택하기 위해 필요한 종류의 최소 수를 찾음
   let total = 0;
   let types = 0;
@@ -20,6 +18,5 @@ function solution(k, tangerine) {
     types += 1;
     if (total >= k) break;
   }
-
   return types;
 }
